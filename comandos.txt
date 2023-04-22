@@ -7,6 +7,7 @@ django-admin startapp books
 python manage.py migrate
 python manage.py runserver
 python manage.py makemigrations
+pip freeze > requirements.txt
 
 Instalar o app books em library\settings.py instaled apps
 
