@@ -1,0 +1,24 @@
+-m env venv
+.\venv\Scripts\activate
+pip install django djangorestframework
+python -m pip install Pillow
+django-admin startproject library .
+django-admin startapp books
+python manage.py migrate
+python manage.py runserver
+python manage.py makemigrations
+
+Instalar o app books em library\settings.py instaled apps
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'books',
+]
+
+
